@@ -4,7 +4,7 @@ import { OverviewBankingView } from 'src/sections/overview/banking/view';
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Dashboard: Banking',
+  title: 'Dashboard: Health & Safety',
 };
 
 export default function OverviewBankingPage() {

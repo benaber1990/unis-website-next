@@ -4,7 +4,7 @@ import { OverviewFileView } from 'src/sections/overview/file/view';
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Dashboard: File',
+  title: 'Dashboard: Training',
 };
 
 export default function OverviewFilePage() {

@@ -223,7 +223,7 @@ export default function InvoiceNewEditDetails() {
                 InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">
-                      <Box sx={{ typography: 'subtitle2', color: 'text.disabled' }}>$</Box>
+                      <Box sx={{ typography: 'subtitle2', color: 'text.disabled' }}>£</Box>
                     </InputAdornment>
                   ),
                 }}
@@ -242,7 +242,7 @@ export default function InvoiceNewEditDetails() {
                 InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">
-                      <Box sx={{ typography: 'subtitle2', color: 'text.disabled' }}>$</Box>
+                      <Box sx={{ typography: 'subtitle2', color: 'text.disabled' }}>£</Box>
                     </InputAdornment>
                   ),
                 }}
@@ -292,7 +292,7 @@ export default function InvoiceNewEditDetails() {
         >
           <RHFTextField
             size="small"
-            label="Shipping($)"
+            label="Shipping(£)"
             name="shipping"
             type="number"
             sx={{ maxWidth: { md: 120 } }}
@@ -300,7 +300,7 @@ export default function InvoiceNewEditDetails() {
 
           <RHFTextField
             size="small"
-            label="Discount($)"
+            label="Discount(£)"
             name="discount"
             type="number"
             sx={{ maxWidth: { md: 120 } }}

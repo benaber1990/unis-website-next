@@ -33,7 +33,7 @@ export default function HomeAdvertisement() {
         sx={{ color: 'common.white', mb: 5, typography: 'h2' }}
       >
         Get started with
-        <br /> Minimal kit today
+        <br /> UNIS today
       </Box>
 
       <Stack
@@ -72,7 +72,7 @@ export default function HomeAdvertisement() {
               '&:hover': { borderColor: 'currentColor' },
             }}
           >
-            Get Free Version
+            Book a Demo
           </Button>
         </m.div>
       </Stack>

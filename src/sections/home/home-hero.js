@@ -202,7 +202,7 @@ export default function HomeHero() {
       </m.div>
 
       <m.div variants={varFade().in}>
-        <Typography variant="body2" sx={{ textAlign: 'center' }}>
+        <Typography variant="body2" sx={{ textAlign: 'center', fontSize: 16, fontWeight: '700' }}>
           Get everything you need to manage your construction company in one place - wherever you
           are
         </Typography>
@@ -237,7 +237,7 @@ export default function HomeHero() {
               variant="contained"
               startIcon={<Iconify icon="eva:flash-fill" width={24} />}
             >
-              Get UNIS
+              Unlock UNIS
             </Button>
 
             <Link
@@ -253,7 +253,7 @@ export default function HomeHero() {
               }}
             >
               <Iconify icon="eva:external-link-fill" width={16} sx={{ mr: 0.5 }} />
-              Get Free Version
+              Speak to a Team Member Today
             </Link>
           </Stack>
 
@@ -267,7 +267,7 @@ export default function HomeHero() {
             href={paths.figma}
             sx={{ borderColor: 'text.primary' }}
           >
-            Design Preview
+            Book a Demo
           </Button>
         </Stack>
       </m.div>
