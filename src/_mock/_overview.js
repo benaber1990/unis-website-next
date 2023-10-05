@@ -186,7 +186,9 @@ export const _bankingContacts = [...Array(12)].map((_, index) => ({
   id: _mock.id(index),
   name: _mock.fullName(index),
   email: _mock.email(index),
-  avatarUrl: _mock.image.avatar(index),
+  // avatarUrl: _mock.image.avatar(index),
+  avatarUrl:
+    'https://images.pexels.com/photos/1094767/pexels-photo-1094767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
 }));
 
 export const _bankingCreditCard = [

@@ -49,7 +49,7 @@ export default function FileWidget({ title, value, total, icon, sx, ...other }) 
           {fData(value)}
         </Box>
 
-        {` / ${fData(total)}`}
+        {`  ${fData(total)}`}
       </Stack>
     </Card>
   );

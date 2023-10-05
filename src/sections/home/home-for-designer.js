@@ -27,7 +27,7 @@ export default function HomeForDesigner() {
     <Box sx={{ textAlign: { xs: 'center', md: 'unset' }, mt: { xs: 10, md: 20 } }}>
       <m.div variants={varFade().inUp}>
         <Typography component="div" variant="overline" sx={{ color: 'text.disabled' }}>
-          Professional Kit
+          UNIS Compliance
         </Typography>
       </m.div>
 
@@ -42,7 +42,8 @@ export default function HomeForDesigner() {
             ),
           }}
         >
-          For Designer
+          Real-time App
+          <br /> Integration
         </Typography>
       </m.div>
 
@@ -56,7 +57,7 @@ export default function HomeForDesigner() {
           rel="noopener"
           href={paths.figma}
         >
-          Figma Workspace
+          Find Out More
         </Button>
       </m.div>
     </Box>

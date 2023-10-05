@@ -77,7 +77,7 @@ export default function HomeHugePackElements() {
         href={paths.components}
         endIcon={<Iconify icon="eva:arrow-ios-forward-fill" width={18} sx={{ ml: -0.5 }} />}
       >
-        View All Components
+        Discover Unis Now
       </Button>
     </m.div>
   );
@@ -92,14 +92,15 @@ export default function HomeHugePackElements() {
     >
       <m.div variants={varFade().inUp}>
         <Typography component="div" variant="overline" sx={{ color: 'text.disabled' }}>
-          Interface Starter Kit
+          UNIS COMPLIANCE
         </Typography>
       </m.div>
 
       <m.div variants={varFade().inUp}>
         <Typography variant="h2" sx={{ my: 3 }}>
-          Huge pack <br />
-          of elements
+          Effortlessy manage
+          <br />
+          your projects
         </Typography>
       </m.div>
 

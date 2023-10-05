@@ -37,7 +37,7 @@ export default function BankingContacts({ title, subheader, list, ...other }) {
 
             <ListItemText primary={contact.name} secondary={contact.email} />
 
-            <Tooltip title="Quick Transfer">
+            <Tooltip title="Project Statistics">
               <IconButton>
                 <Iconify icon="eva:diagonal-arrow-right-up-fill" />
               </IconButton>

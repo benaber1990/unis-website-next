@@ -75,7 +75,7 @@ export default function Header() {
                 sx={{ ml: 1 }}
               >
                 <Label color="info" sx={{ textTransform: 'unset', height: 22, px: 0.5 }}>
-                  v5.5.0
+                  v0.1 Beta
                 </Label>
               </Link>
             }
@@ -89,7 +89,7 @@ export default function Header() {
 
           <Stack alignItems="center" direction={{ xs: 'row', md: 'row-reverse' }}>
             <Button variant="contained" target="_blank" rel="noopener" href={paths.minimalUI}>
-              Purchase Now
+              Get UNIS Now
             </Button>
 
             {mdUp && <LoginButton />}

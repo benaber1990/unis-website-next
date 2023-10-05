@@ -58,34 +58,49 @@ export function useNavData() {
         subheader: t('overview'),
         items: [
           {
-            title: t('app'),
+            title: t('Dashboard'),
             path: paths.dashboard.root,
             icon: ICONS.dashboard,
           },
           {
-            title: t('ecommerce'),
-            path: paths.dashboard.general.ecommerce,
-            icon: ICONS.ecommerce,
-          },
-          {
-            title: t('analytics'),
-            path: paths.dashboard.general.analytics,
-            icon: ICONS.analytics,
-          },
-          {
-            title: t('banking'),
+            title: t('Commercial'),
             path: paths.dashboard.general.banking,
             icon: ICONS.banking,
           },
           {
-            title: t('booking'),
+            title: t('Human Resouces'),
+            path: paths.dashboard.general.file,
+            icon: ICONS.file,
+          },
+          {
+            title: t('Projects'),
+            path: paths.dashboard.general.analytics,
+            icon: ICONS.analytics,
+          },
+          {
+            title: t('Health & Safety'),
             path: paths.dashboard.general.booking,
             icon: ICONS.booking,
           },
           {
-            title: t('file'),
-            path: paths.dashboard.general.file,
-            icon: ICONS.file,
+            title: t('Supply Chain'),
+            path: paths.dashboard.post.root,
+            icon: ICONS.booking,
+          },
+          {
+            title: t('Fleet'),
+            path: paths.dashboard.general.booking,
+            icon: ICONS.booking,
+          },
+          {
+            title: t('Plant & Equipment'),
+            path: paths.dashboard.general.booking,
+            icon: ICONS.booking,
+          },
+          {
+            title: t('Training'),
+            path: paths.dashboard.general.booking,
+            icon: ICONS.booking,
           },
         ],
       },

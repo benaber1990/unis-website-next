@@ -48,7 +48,9 @@ export default function NavVertical({ openNav, onCloseNav }) {
         },
       }}
     >
-      <Logo sx={{ mt: 3, ml: 4, mb: 1 }} />
+      <div style={{ paddingLeft: 20, paddingTop: 10 }}>
+        <Logo sx={{ mt: 3, ml: 4, mb: 1 }} />
+      </div>
 
       <NavSectionVertical
         data={navData}

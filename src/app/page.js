@@ -4,7 +4,7 @@ import { HomeView } from 'src/sections/home/view';
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Minimal: The starting point for your next project',
+  title: 'Unis Compliance: All You Need to Manage Your Construction Company in One Place',
 };
 
 export default function HomePage() {

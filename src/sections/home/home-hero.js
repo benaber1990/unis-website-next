@@ -203,8 +203,7 @@ export default function HomeHero() {
 
       <m.div variants={varFade().in}>
         <Typography variant="body2" sx={{ textAlign: 'center', fontSize: 16, fontWeight: '700' }}>
-          Get everything you need to manage your construction company in one place - wherever you
-          are
+          All you need to manage your construction company in one place - wherever you are
         </Typography>
       </m.div>
 

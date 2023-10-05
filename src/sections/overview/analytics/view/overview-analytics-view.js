@@ -37,13 +37,13 @@ export default function OverviewAnalyticsView() {
           mb: { xs: 3, md: 5 },
         }}
       >
-        Hi, Welcome back 👋
+        Welcome back 👋
       </Typography>
 
       <Grid container spacing={3}>
         <Grid xs={12} sm={6} md={3}>
           <AnalyticsWidgetSummary
-            title="Weekly Sales"
+            title="Live Projects"
             total={714000}
             icon={<img alt="icon" src="/assets/icons/glass/ic_glass_bag.png" />}
           />
@@ -51,7 +51,7 @@ export default function OverviewAnalyticsView() {
 
         <Grid xs={12} sm={6} md={3}>
           <AnalyticsWidgetSummary
-            title="New Users"
+            title="Closed Projects"
             total={1352831}
             color="info"
             icon={<img alt="icon" src="/assets/icons/glass/ic_glass_users.png" />}
@@ -60,7 +60,7 @@ export default function OverviewAnalyticsView() {
 
         <Grid xs={12} sm={6} md={3}>
           <AnalyticsWidgetSummary
-            title="Item Orders"
+            title="Tenders"
             total={1723315}
             color="warning"
             icon={<img alt="icon" src="/assets/icons/glass/ic_glass_buy.png" />}
@@ -69,7 +69,7 @@ export default function OverviewAnalyticsView() {
 
         <Grid xs={12} sm={6} md={3}>
           <AnalyticsWidgetSummary
-            title="Bug Reports"
+            title="Client Management"
             total={234}
             color="error"
             icon={<img alt="icon" src="/assets/icons/glass/ic_glass_message.png" />}
@@ -78,8 +78,8 @@ export default function OverviewAnalyticsView() {
 
         <Grid xs={12} md={6} lg={8}>
           <AnalyticsWebsiteVisits
-            title="Website Visits"
-            subheader="(+43%) than last year"
+            title="Projects Progress"
+            subheader="(/100%) based on number of deliverables completed"
             chart={{
               labels: [
                 '01/01/2003',
@@ -96,19 +96,19 @@ export default function OverviewAnalyticsView() {
               ],
               series: [
                 {
-                  name: 'Team A',
+                  name: 'Project 1',
                   type: 'column',
                   fill: 'solid',
                   data: [23, 11, 22, 27, 13, 22, 37, 21, 44, 22, 30],
                 },
                 {
-                  name: 'Team B',
+                  name: 'Project 2',
                   type: 'area',
                   fill: 'gradient',
                   data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43],
                 },
                 {
-                  name: 'Team C',
+                  name: 'Project 3',
                   type: 'line',
                   fill: 'solid',
                   data: [30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39],
@@ -120,13 +120,13 @@ export default function OverviewAnalyticsView() {
 
         <Grid xs={12} md={6} lg={4}>
           <AnalyticsCurrentVisits
-            title="Current Visits"
+            title="Live Sites by Location"
             chart={{
               series: [
-                { label: 'America', value: 4344 },
-                { label: 'Asia', value: 5435 },
-                { label: 'Europe', value: 1443 },
-                { label: 'Africa', value: 4443 },
+                { label: 'North', value: 4344 },
+                { label: 'East', value: 5435 },
+                { label: 'South', value: 1443 },
+                { label: 'West', value: 4443 },
               ],
             }}
           />
@@ -134,20 +134,20 @@ export default function OverviewAnalyticsView() {
 
         <Grid xs={12} md={6} lg={8}>
           <AnalyticsConversionRates
-            title="Conversion Rates"
+            title="Project Progress Pipeline"
             subheader="(+43%) than last year"
             chart={{
               series: [
-                { label: 'Italy', value: 400 },
-                { label: 'Japan', value: 430 },
-                { label: 'China', value: 448 },
-                { label: 'Canada', value: 470 },
-                { label: 'France', value: 540 },
-                { label: 'Germany', value: 580 },
-                { label: 'South Korea', value: 690 },
-                { label: 'Netherlands', value: 1100 },
-                { label: 'United States', value: 1200 },
-                { label: 'United Kingdom', value: 1380 },
+                { label: 'Project 1', value: 1 },
+                { label: 'Project 2', value: 2 },
+                { label: 'Project 3', value: 3 },
+                { label: 'Project 4', value: 4 },
+                { label: 'Project 5', value: 5 },
+                { label: 'Project 6', value: 6 },
+                { label: 'Project 7', value: 7 },
+                { label: 'Project 8', value: 8 },
+                { label: 'Project 9', value: 9 },
+                { label: 'Project 10', value: 10 },
               ],
             }}
           />
@@ -155,9 +155,9 @@ export default function OverviewAnalyticsView() {
 
         <Grid xs={12} md={6} lg={4}>
           <AnalyticsCurrentSubject
-            title="Current Subject"
+            title="Client Segmentation"
             chart={{
-              categories: ['English', 'History', 'Physics', 'Geography', 'Chinese', 'Math'],
+              categories: ['Commercial', 'Housing', 'Rail', 'Highways', 'Agricultural', 'Other'],
               series: [
                 { name: 'Series 1', data: [80, 50, 30, 40, 100, 20] },
                 { name: 'Series 2', data: [20, 30, 40, 80, 20, 80] },
@@ -168,19 +168,23 @@ export default function OverviewAnalyticsView() {
         </Grid>
 
         <Grid xs={12} md={6} lg={8}>
-          <AnalyticsNews title="News" list={_analyticPosts} />
+          <AnalyticsNews title="Project Updates" list={_analyticPosts} />
         </Grid>
 
         <Grid xs={12} md={6} lg={4}>
-          <AnalyticsOrderTimeline title="Order Timeline" list={_analyticOrderTimeline} />
+          <AnalyticsOrderTimeline title="Key Date Milestones" list={_analyticOrderTimeline} />
         </Grid>
 
         <Grid xs={12} md={6} lg={4}>
-          <AnalyticsTrafficBySite title="Traffic by Site" list={_analyticTraffic} />
+          {/* <AnalyticsTrafficBySite title="Traffic by Site" list={_analyticTraffic} /> */}
+
+          <div style={{ backgroundColor: 'green', padding: 30, borderRadius: 4 }}>
+            <h4>Add New Task</h4>
+          </div>
         </Grid>
 
         <Grid xs={12} md={6} lg={8}>
-          <AnalyticsTasks title="Tasks" list={_analyticTasks} />
+          <AnalyticsTasks title="Your Assigned Tasks" list={_analyticTasks} />
         </Grid>
       </Grid>
     </Container>

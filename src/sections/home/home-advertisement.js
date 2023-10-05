@@ -54,7 +54,7 @@ export default function HomeAdvertisement() {
               bgcolor: 'common.white',
             }}
           >
-            Purchase Now
+            Get UNIS Now
           </Button>
         </m.div>
 

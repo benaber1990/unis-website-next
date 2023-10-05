@@ -40,8 +40,9 @@ export default function OverviewAppView() {
       <Grid container spacing={3}>
         <Grid xs={12} md={8}>
           <AppWelcome
-            title={`Welcome back 👋 \n ${user?.displayName}`}
-            description="If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything."
+            // title={`Welcome back 👋 \n ${user?.displayName}`}
+            title={`Welcome back 👋 \n Adam Smith`}
+            description="Find everything you need to organise and manage your construction company."
             img={<SeoIllustration />}
             action={
               <Button variant="contained" color="primary">
@@ -178,7 +179,7 @@ export default function OverviewAppView() {
         </Grid>
 
         <Grid xs={12} md={6} lg={4}>
-          <AppTopAuthors title="Top Authors" list={_appAuthors} />
+          <AppTopAuthors title="Top Hub Users" list={_appAuthors} />
         </Grid>
 
         <Grid xs={12} md={6} lg={4}>

@@ -2,6 +2,7 @@
 
 // @mui
 import { useTheme } from '@mui/material/styles';
+import { useState, useRef, useCallback } from 'react';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
@@ -18,13 +19,29 @@ import BankingCurrentBalance from '../banking-current-balance';
 import BankingBalanceStatistics from '../banking-balance-statistics';
 import BankingRecentTransitions from '../banking-recent-transitions';
 import BankingExpensesCategories from '../banking-expenses-categories';
+import { Link } from '@mui/material';
+import Box from '@mui/material/Box';
 
 // ----------------------------------------------------------------------
 
-export default function OverviewBankingView() {
+import { useBoolean } from 'src/hooks/use-boolean';
+// components
+import Iconify from 'src/components/iconify';
+//
+import FileManagerFolderItem from 'src/sections/file-manager/file-manager-folder-item';
+
+export default function OverviewBankingView({
+  table,
+  data,
+  dataFiltered,
+  onDeleteItem,
+  onOpenConfirm,
+}) {
   const theme = useTheme();
 
   const settings = useSettingsContext();
+
+  // const { selected, onSelectRow: onSelectItem, onSelectAllRows: onSelectAllItems } = table;
 
   return (
     <Container maxWidth={settings.themeStretch ? false : 'xl'}>
@@ -32,7 +49,7 @@ export default function OverviewBankingView() {
         <Grid xs={12} md={7}>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={3}>
             <BankingWidgetSummary
-              title="Income"
+              title="Company Income"
               icon="eva:diagonal-arrow-left-down-fill"
               percent={2.6}
               total={18765}
@@ -57,7 +74,7 @@ export default function OverviewBankingView() {
             />
 
             <BankingWidgetSummary
-              title="Expenses"
+              title="Company Expenses"
               color="warning"
               icon="eva:diagonal-arrow-right-up-fill"
               percent={-0.5}
@@ -86,6 +103,36 @@ export default function OverviewBankingView() {
 
         <Grid xs={12} md={5}>
           <BankingCurrentBalance list={_bankingCreditCard} />
+        </Grid>
+
+        {/* New Add Folder Box Grid */}
+        <Grid xs={12} md={5} style={{ backgroundColor: 'green', marginLeft: 12 }}>
+          {/* <Box
+            gap={3}
+            display="grid"
+            gridTemplateColumns={{
+              xs: 'repeat(1, 1fr)',
+              sm: 'repeat(2, 1fr)',
+              md: 'repeat(3, 1fr)',
+              lg: 'repeat(4, 1fr)',
+            }}
+          >
+            {dataFiltered
+              .filter((i) => i.type === 'folder')
+              .map((folder) => (
+                <FileManagerFolderItem
+                  key={folder.id}
+                  folder={folder}
+                  selected={selected.includes(folder.id)}
+                  onSelect={() => onSelectItem(folder.id)}
+                  onDelete={() => onDeleteItem(folder.id)}
+                  sx={{ maxWidth: 'auto' }}
+                />
+              ))}
+          </Box> */}
+          <Link href="/dashboard/file-manager/">
+            <p>Add New Folder</p>
+          </Link>
         </Grid>
 
         <Grid xs={12} md={8}>
@@ -168,12 +215,12 @@ export default function OverviewBankingView() {
             />
 
             <BankingRecentTransitions
-              title="Recent Transitions"
+              title="Upcoming Events"
               tableData={_bankingRecentTransitions}
               tableLabels={[
                 { id: 'description', label: 'Description' },
-                { id: 'date', label: 'Date' },
-                { id: 'amount', label: 'Amount' },
+                { id: 'date', label: 'Folder' },
+                { id: 'amount', label: 'Due Date' },
                 { id: 'status', label: 'Status' },
                 { id: '' },
               ]}
@@ -183,16 +230,16 @@ export default function OverviewBankingView() {
 
         <Grid xs={12} md={4}>
           <Stack spacing={3}>
-            <BankingQuickTransfer title="Quick Transfer" list={_bankingContacts} />
+            <BankingQuickTransfer title="Project Statistics" list={_bankingContacts} />
 
             <BankingContacts
-              title="Contacts"
-              subheader="You have 122 contacts"
+              title="Live Projects"
+              subheader="You have 122 live projects"
               list={_bankingContacts.slice(-5)}
             />
 
             <BankingInviteFriends
-              price="$50"
+              price="£50"
               title={`Invite friends \n and earn`}
               description="Praesent egestas tristique nibh. Duis lobortis massa imperdiet quam."
               img="/assets/illustrations/characters/character_11.png"

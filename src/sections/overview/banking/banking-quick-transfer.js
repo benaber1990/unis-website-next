@@ -24,6 +24,20 @@ import { fCurrency } from 'src/utils/format-number';
 import Iconify from 'src/components/iconify';
 import Carousel, { CarouselArrows, useCarousel } from 'src/components/carousel';
 
+import { _bankingContacts, _bankingCreditCard, _bankingRecentTransitions } from 'src/_mock';
+// components
+import { useSettingsContext } from 'src/components/settings';
+import BankingBalanceStatistics from './banking-balance-statistics';
+//
+// import BankingContacts from '../banking-contacts';
+// import BankingQuickTransfer from '../banking-quick-transfer';
+// import BankingInviteFriends from '../banking-invite-friends';
+// import BankingWidgetSummary from '../banking-widget-summary';
+// import BankingCurrentBalance from '../banking-current-balance';
+// import BankingBalanceStatistics from '../banking-balance-statistics';
+// import BankingRecentTransitions from '../banking-recent-transitions';
+// import BankingExpensesCategories from '../banking-expenses-categories';
+
 // ----------------------------------------------------------------------
 
 const STEP = 50;
@@ -173,7 +187,55 @@ export default function BankingQuickTransfer({ title, subheader, list, sx, ...ot
 
   const renderInput = (
     <Stack spacing={3}>
-      <Typography variant="overline" sx={{ color: 'text.secondary' }}>
+      <BankingBalanceStatistics
+        title="Project 1 Statistics"
+        subheader="(+43% Income | +12% Expense) than last year"
+        chart={{
+          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+          series: [
+            {
+              type: 'Week',
+              data: [
+                {
+                  name: 'Income',
+                  data: [10, 41, 35, 151, 49, 62, 69, 91, 48],
+                },
+                {
+                  name: 'Expenses',
+                  data: [10, 34, 13, 56, 77, 88, 99, 77, 45],
+                },
+              ],
+            },
+            {
+              type: 'Month',
+              data: [
+                {
+                  name: 'Income',
+                  data: [148, 91, 69, 62, 49, 51, 35, 41, 10],
+                },
+                {
+                  name: 'Expenses',
+                  data: [45, 77, 99, 88, 77, 56, 13, 34, 10],
+                },
+              ],
+            },
+            {
+              type: 'Year',
+              data: [
+                {
+                  name: 'Income',
+                  data: [76, 42, 29, 41, 27, 138, 117, 86, 63],
+                },
+                {
+                  name: 'Expenses',
+                  data: [80, 55, 34, 114, 80, 130, 15, 28, 55],
+                },
+              ],
+            },
+          ],
+        }}
+      />
+      {/* <Typography variant="overline" sx={{ color: 'text.secondary' }}>
         insert amount
       </Typography>
 
@@ -209,7 +271,7 @@ export default function BankingQuickTransfer({ title, subheader, list, sx, ...ot
         onClick={confirm.onTrue}
       >
         Transfer Now
-      </Button>
+      </Button> */}
     </Stack>
   );
 

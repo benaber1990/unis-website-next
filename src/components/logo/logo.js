@@ -6,7 +6,9 @@ import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 // routes
 import { RouterLink } from 'src/routes/components';
+import logo_single from 'public/logo_single.png';
 
+const imageLink = logo_single;
 // ----------------------------------------------------------------------
 
 const Logo = forwardRef(({ disabledLink = false, sx, ...other }, ref) => {
@@ -81,9 +83,12 @@ const Logo = forwardRef(({ disabledLink = false, sx, ...other }, ref) => {
   }
 
   return (
-    <Link component={RouterLink} href="/" sx={{ display: 'contents' }}>
-      {logo}
-    </Link>
+    <div>
+      <img src="https://i.imgur.com/5qpC4Ky.png" style={{ height: 50, width: 50 }} />
+    </div>
+    // <Link component={RouterLink} href="/" sx={{ display: 'contents' }}>
+    //   {logo}
+    // </Link>
   );
 });
 

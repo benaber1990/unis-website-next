@@ -29,7 +29,7 @@ export default function HomeLookingFor() {
       href={paths.zoneUI}
       endIcon={<Iconify icon="eva:arrow-ios-forward-fill" />}
     >
-      Visit Zone Landing Page
+      Speak to a Team Member Now
     </Button>
   );
 
@@ -44,7 +44,7 @@ export default function HomeLookingFor() {
     >
       <m.div variants={varFade().inDown}>
         <Typography variant="overline" component="div" sx={{ color: 'text.disabled' }}>
-          Looking For a
+          UNIS COMPLIANCE
         </Typography>
       </m.div>
 
@@ -56,7 +56,8 @@ export default function HomeLookingFor() {
             mb: { md: 5 },
           }}
         >
-          Landing Page Template?
+          Be Organised. Be Secure. <br />
+          Be Compliant.
         </Typography>
       </m.div>
 

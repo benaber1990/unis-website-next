@@ -27,17 +27,18 @@ export default function HomeColorPresets() {
     <Stack spacing={3} sx={{ textAlign: 'center' }}>
       <m.div variants={varFade().inDown}>
         <Typography component="div" variant="overline" sx={{ color: 'text.disabled' }}>
-          choose your style
+          UNIS COMPLIANCE
         </Typography>
       </m.div>
 
       <m.div variants={varFade().inDown}>
-        <Typography variant="h2"> Color Presets </Typography>
+        <Typography variant="h2"> Get Set Up in Minutes </Typography>
       </m.div>
 
       <m.div variants={varFade().inDown}>
         <Typography sx={{ color: 'text.secondary' }}>
-          Express your own style with just one click
+          UNIS is designed by engineers for engineers - <br />
+          so it works the way you want it to
         </Typography>
       </m.div>
     </Stack>

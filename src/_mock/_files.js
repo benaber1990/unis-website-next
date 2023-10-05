@@ -8,11 +8,11 @@ const GB = 1000000000 * 24;
 const FOLDERS = ['Docs', 'Projects', 'Work', 'Training', 'Sport', 'Foods'];
 
 const FILES = [
-  'cover-2.jpg',
-  'design-suriname-2015.mp3',
-  'expertise-2015-conakry-sao-tome-and-principe-gender.mp4',
-  'money-popup-crack.pdf',
-  'cover-4.jpg',
+  'Payroll Month: Jan 2024',
+  'Payroll Month: Dec 2023',
+  'Payroll Month: Nov 2023',
+  'Paryoll Month: Oct 2023',
+  'Payroll Month: Sep 2023',
   'cover-6.jpg',
   'large-news.txt',
   'nauru-6015-small-fighter-left-gender.psd',

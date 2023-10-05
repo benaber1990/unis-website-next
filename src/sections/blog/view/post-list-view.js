@@ -81,19 +81,19 @@ export default function PostListView() {
   return (
     <Container maxWidth={settings.themeStretch ? false : 'lg'}>
       <CustomBreadcrumbs
-        heading="List"
+        heading="Health & Safety"
         links={[
           {
             name: 'Dashboard',
             href: paths.dashboard.root,
           },
           {
-            name: 'Blog',
+            name: 'Health & Safety',
             href: paths.dashboard.post.root,
           },
-          {
-            name: 'List',
-          },
+          // {
+          //   name: 'List',
+          // },
         ]}
         action={
           <Button

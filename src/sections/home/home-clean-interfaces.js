@@ -39,7 +39,7 @@ export default function HomeCleanInterfaces() {
                 : `4px 4px 16px ${alpha(theme.palette.grey[800], 0.48)}`,
           }}
         >
-          Beautiful, modern and clean user interfaces
+          From HR to project management & compliance, UNIS has you covered
         </Typography>
       </m.div>
     </Stack>

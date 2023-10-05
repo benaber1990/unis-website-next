@@ -42,13 +42,13 @@ export default function HomePricing() {
 
       <m.div variants={varFade().inDown}>
         <Typography variant="h2">
-          The right plan for <br /> your business
+          The right system for <br /> your business
         </Typography>
       </m.div>
 
       <m.div variants={varFade().inDown}>
         <Typography sx={{ color: 'text.secondary' }}>
-          Choose the perfect plan for your needs. Always flexible to grow
+          Choose the perfect plan for your needs
         </Typography>
       </m.div>
     </Stack>
@@ -114,12 +114,12 @@ export default function HomePricing() {
           }}
         >
           <m.div variants={varFade().inDown}>
-            <Typography variant="h4">Still have questions?</Typography>
+            <Typography variant="h4">Want to Know More?</Typography>
           </m.div>
 
           <m.div variants={varFade().inDown}>
             <Typography sx={{ mt: 2, mb: 5, color: 'text.secondary' }}>
-              Please describe your case to receive the most accurate advice.
+              Speak to a team member today to find out how UNIS can help you
             </Typography>
           </m.div>
 
@@ -130,7 +130,7 @@ export default function HomePricing() {
               variant="contained"
               href="mailto:support@minimals.cc?subject=[Feedback] from Customer"
             >
-              Contact us
+              Contact UNIS
             </Button>
           </m.div>
         </Box>

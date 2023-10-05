@@ -20,20 +20,19 @@ export default function HomeDarkMode() {
     <Stack alignItems="center" spacing={3}>
       <m.div variants={varFade().inUp}>
         <Typography component="div" variant="overline" sx={{ color: 'primary.main' }}>
-          Easy switch between styles.
+          STAY COMPLIANT. STAY ORGANISED. STAY AHEAD
         </Typography>
       </m.div>
 
       <m.div variants={varFade().inUp}>
         <Typography variant="h2" sx={{ color: 'common.white' }}>
-          Dark mode
+          UNIS uses the latest technology
+          <br /> to power your team
         </Typography>
       </m.div>
 
       <m.div variants={varFade().inUp}>
-        <Typography sx={{ color: 'grey.500' }}>
-          A dark theme that feels easier on the eyes.
-        </Typography>
+        <Typography sx={{ color: 'grey.500' }}>Software that fits into your company</Typography>
       </m.div>
 
       <m.div variants={varFade().inUp}>

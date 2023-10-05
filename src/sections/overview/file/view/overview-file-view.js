@@ -124,34 +124,34 @@ export default function OverviewFileView() {
 
           <Grid xs={12} sm={6} md={4}>
             <FileWidget
-              title="Dropbox"
-              value={GB / 10}
-              total={GB}
+              title="Employees"
+              value={''}
+              total={''}
               icon="/assets/icons/app/ic_dropbox.svg"
             />
           </Grid>
 
           <Grid xs={12} sm={6} md={4}>
             <FileWidget
-              title="Drive"
-              value={GB / 5}
-              total={GB}
+              title="Holidays"
+              value={''}
+              total={''}
               icon="/assets/icons/app/ic_drive.svg"
             />
           </Grid>
 
           <Grid xs={12} sm={6} md={4}>
             <FileWidget
-              title="OneDrive"
-              value={GB / 2}
-              total={GB}
+              title="Absences"
+              value={''}
+              total={''}
               icon="/assets/icons/app/ic_onedrive.svg"
             />
           </Grid>
 
           <Grid xs={12} md={6} lg={8}>
             <FileDataActivity
-              title="Data Activity"
+              title="Efficiency Report"
               chart={{
                 labels: TIME_LABELS,
                 colors: [
@@ -230,7 +230,7 @@ export default function OverviewFileView() {
               </Scrollbar>
 
               <FileManagerPanel
-                title="Recent Files"
+                title="Payroll"
                 link={paths.dashboard.fileManager}
                 onOpen={upload.onTrue}
                 sx={{ mt: 2 }}
